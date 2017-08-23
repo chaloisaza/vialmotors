@@ -3,7 +3,7 @@
         //init vars
         $('#bannerImage').hide();
         $('.divCategories').hide();
-        $('#searchDiv').hide();
+        $('#parentSearchDiv').hide();
 
 
 
@@ -63,7 +63,7 @@
 
 
             //hide search div
-            $('#searchDiv').hide();
+            $('#parentSearchDiv').hide();
 
             //remove nav active class
             $('.navbarList').removeClass('active');
@@ -96,7 +96,7 @@
         $('.list-group-item').click(function (e) {
 
             //show search div
-            $('#searchDiv').show();
+            $('#parentSearchDiv').show();
 
             //remove categories active class
             $('.list-group-item').removeClass('active');
