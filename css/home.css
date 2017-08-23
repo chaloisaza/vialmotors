@@ -93,9 +93,26 @@ button {
     background-position: 0px !important;
 }
 
+#searchDiv{
+    background: #3f3f3f;
+    padding: 5%;
+    margin-top: 10%;
+    border-radius: 5px
+}
+
 #searchDiv span{
     width: 100%;
+    color: #f2e22b;
     display: inline-block;
+}
+
+#searchDiv select{
+    width: 100%;
+}
+
+#searchDiv hr{
+    background: white;
+    margin: 25px 0px;
 }
 
 
