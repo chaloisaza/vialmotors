@@ -34,17 +34,17 @@
         </button>
         <div class="text-center collapse navbar-collapse " id="navbarResponsive">
             <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio</a>
+                <li class="nav-item navbarList active">
+                    <a id="home" class="nav-link" href="#">Inicio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca de nosotros</a>
+                <li class="nav-item navbarList">
+                    <a id="aboutUs" class="nav-link" href="#">Acerca de nosotros</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                <li class="nav-item navbarList">
+                    <a id="services" class="nav-link" href="#">Servicios</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                <li class="nav-item navbarList">
+                    <a id="contact" class="nav-link" href="#">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -79,6 +79,8 @@
             </a>
     </div>
 
+    <div id="bannerImage"></div>
+
     <div class="container">
 
         <div class="row">
@@ -87,25 +89,93 @@
 
 
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
 
                         <div class="col-lg-12">
 
-                            <h3 class="my-4 borderTitle">CATEGORÍAS</h3>
+
+                            <div id="searchDiv" >
+
+                                <h3 class="categoryMenu my-4 borderTitle">Búsqueda por medida</h3>
+                                <div class="searchBox row">
+                                    <div class="col-xs-3 col-sm-3 col-lg-3">
+                                        <span>Línea</span>
+                                        <select name="sizeLine">
+                                            <option value="" selected>Elija</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xs-3 col-sm-3 col-lg-3">
+                                        <span>Ancho</span>
+                                        <select name="sizeLine">
+                                            <option value="" selected>Elija</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xs-3 col-sm-3 col-lg-3">
+                                        <span>Perfil</span>
+                                        <select name="sizeLine">
+                                            <option value="" selected>Elija</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xs-3 col-sm-3 col-lg-3">
+                                        <span>Rin</span>
+                                        <select name="sizeLine">
+                                            <option value="" selected>Elija</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <h3 class="categoryMenu my-4 borderTitle">Búsqueda por vehículo</h3>
+                                <div class="searchBox row">
+                                    <div class="col-xs-3 col-sm-3 col-lg-3">
+                                        <span>Marca</span>
+                                        <select name="sizeLine">
+                                            <option value="" selected>Elija</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xs-3 col-sm-3 col-lg-3">
+                                        <span>Modelo</span>
+                                        <select name="sizeLine">
+                                            <option value="" selected>Elija</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xs-3 col-sm-3 col-lg-3">
+                                        <span>Versión</span>
+                                        <select name="sizeLine">
+                                            <option value="" selected>Elija</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xs-3 col-sm-3 col-lg-3">
+                                        <span>Año</span>
+                                        <select name="sizeLine">
+                                            <option value="" selected>Elija</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 id='categoryMenu' class="my-4 borderTitle">CATEGORÍAS</h3>
                             <div class="list-group categoriesList">
-                                <a href="#" class="list-group-item active">AUTO - CAMPERO</a>
-                                <a href="#" class="list-group-item">CAMIÓN - BUS - VOLQUETA</a>
-                                <a href="#" class="list-group-item">AGRO</a>
-                                <a href="#" class="list-group-item">MUEVE TIERRA - INDUSTRIAL</a>
-                                <a href="#" class="list-group-item">RIN - NEUMÁTICO - PROTECTOR</a>
-                                <a href="#" class="list-group-item">MOTO</a>
+                                <span id='autoCampero' class="list-group-item">AUTO - CAMPERO</span>
+                                <span id='camionBusVolqueta' class="list-group-item">CAMIÓN - BUS - VOLQUETA</span>
+                                <span id='agro' class="list-group-item">AGRO</span>
+                                <span id='mueveTierraIndustrial' class="list-group-item">MUEVE TIERRA - INDUSTRIAL</span>
+                                <span id='rinNeumaticoProtector' class="list-group-item">RIN - NEUMÁTICO - PROTECTOR</span>
+                                <span id='moto' class="list-group-item">MOTO</span>
                             </div>
 
                         </div>
                         <!-- /.col-lg-3 -->
                     </div>
 
-                    <div class="col-lg-9">
+
+                    <!-- /.col-lg-9 Inicio -->
+                    <div id='divInicio' class="col-lg-8">
                         <div class="col-lg-12">
                             <div class="row">
                                 <div class="col-lg-12 ">
@@ -212,17 +282,101 @@
                             </div>
                         </div>
                     </div>
+                    <!-- /.col-lg-9 Fin -->
+
+                    <!-- /.col-lg-9 Inicio -->
+                    <div id='divautoCampero' class="divCategories col-lg-8">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <h3 class="my-4 borderTitle">AUTO - CAMPERO</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.col-lg-9 Fin -->
+
+                    <!-- /.col-lg-9 Inicio -->
+                    <div id='divcamionBusVolqueta' class="divCategories col-lg-8">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <h3 class="my-4 borderTitle">CAMIÓN - BUS - VOLQUETA</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.col-lg-9 Fin -->
+
+                    <!-- /.col-lg-9 Inicio -->
+                    <div id='divagro' class="divCategories col-lg-8">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <h3 class="my-4 borderTitle">AGRO</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.col-lg-9 Fin -->
+
+                    <!-- /.col-lg-9 Inicio -->
+                    <div id='divmueveTierraIndustrial' class="divCategories col-lg-8">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <h3 class="my-4 borderTitle">MUEVE TIERRA - INDUSTRIAL</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.col-lg-9 Fin -->
+
+                    <div id='divrinNeumaticoProtector' class="divCategories col-lg-8">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <h3 class="my-4 borderTitle">RIN - NEUMÁTICO - PROTECTO</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.col-lg-9 Fin -->
+
+                    <div id='divmoto' class="divCategories col-lg-8">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <h3 class="my-4 borderTitle">MOTO</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.col-lg-9 Fin -->
+
+
+
                 </div>
-                <!-- /.row -->
+
+
 
             </div>
-            <!-- /.col-lg-9 -->
-
+            <!-- /.row -->
 
         </div>
-        <!-- /.row -->
+        <!-- /.col-lg-9 -->
 
-        <a id="back-to-top" href="#" class="btn-lg back-to-top">
+
+    </div>
+    <!-- /.row -->
+
+    <a id="back-to-top" href="#" class="btn-lg back-to-top">
             <span class="fa fa-arrow-up fa-2x"></span>
         </a>
     </div>
@@ -329,7 +483,6 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
-
     </script>
 
 </body>

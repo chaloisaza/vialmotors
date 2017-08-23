@@ -60,10 +60,12 @@ button {
     margin-bottom: 0!important;
 }
 
-.categoriesList a {
+.categoriesList span {
     background-color: #3f3f3f !important;
     border-top: 1px solid #f2e22b !important;
     border-bottom: 1px solid #f2e22b !important;
+    color: #f2e22b;
+    cursor: pointer;
 }
 
 .borderTitle {
@@ -82,6 +84,18 @@ button {
 
 .bigContainer {
     max-width: 100%;
+}
+
+#bannerImage{
+    width: 100% !important;
+    height: 450px !important;
+    background-size: cover !important;
+    background-position: 0px !important;
+}
+
+#searchDiv span{
+    width: 100%;
+    display: inline-block;
 }
 
 
