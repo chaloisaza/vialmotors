@@ -77,6 +77,14 @@ button {
     cursor: pointer;
 }
 
+.categoriesList span:hover{
+        background-color: #f2e22b !important;
+        border-top: 1px solid #3f3f3f !important;
+        border-bottom: 1px solid #3f3f3f !important;
+        color: #3f3f3f;
+        cursor: pointer;
+}
+
 .borderTitle {
     display: table;
     border-bottom: 1.5px solid #f2e22b;
@@ -144,6 +152,22 @@ a {
 .ourMarksDiv {
     padding-left: 14%;
     padding-top: 1%;
+}
+
+.h-100 a{
+    height: 120.75px;
+    position: relative;
+    border-bottom: 1px solid;
+}
+
+.h-100 a img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.card-title a{
+    border-bottom:none !important
 }
 
 .owl-carousel {
