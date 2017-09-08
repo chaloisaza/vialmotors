@@ -5,6 +5,15 @@ body {
     background-position: -761px 200px;
 }
 
+.containerDivSubPage{
+    margin: 60px auto 60px auto;
+   
+}
+
+.containerTextDivSubPage{
+    margin: 0 auto !important;
+}
+
 button {
     outline: none !important;
 }
@@ -128,6 +137,9 @@ a {
     text-decoration: none !important;
     font-weight: bolder;
 }
+.nolink a{
+    color: #212529 !important;
+}
 
 .ourMarksDiv {
     padding-left: 14%;
@@ -150,6 +162,7 @@ a {
     bottom: 0;
     right: 20px;
     display: none;
+    z-index: 1;    
 }
 
 .back-to-top:hover {
