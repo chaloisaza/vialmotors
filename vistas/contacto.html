@@ -25,12 +25,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="logoImage" class="navbar-brand" href="../index.html">
-                    <img  class="d-block img-fluid" src="../images/logo.png" alt="First slide">
-                </a>
+            <img class="d-block img-fluid" src="../images/logo.png" alt="First slide">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="text-center collapse navbar-collapse " id="navbarResponsive">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item navbarList">
@@ -40,10 +40,13 @@
                     <a id="aboutUs" class="nav-link" href="acercadenosotros.html">Acerca de nosotros</a>
                 </li>
                 <li class="nav-item navbarList">
-                    <a id="services" class="nav-link" href="servicios.html">Servicios</a>
+                    <a id="services" class="nav-link" href="servicios.html">F.A.Q</a>
                 </li>
                 <li class="nav-item navbarList active">
                     <a id="contact" class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="shopping-cart nav-item navbarList">
+                    <i class="fa fa-2x   fa-shopping-cart" aria-hidden="true"></i>
                 </li>
             </ul>
         </div>
@@ -53,15 +56,26 @@
         <div class="col-sm-8 containerTextDivSubPage">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Contacto</h4>
-                    <p class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                        like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                    <h4 class="card-title">Contacto:</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Número de contacto:</label>
+                            <input type="text" class="form-control" id="number">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comentario:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <button type="button" class="pull-right btn btn-default">Enviar</button>
+                    </form>
                 </div>
                 <div class="card-footer">
                     <!--<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>-->
@@ -88,11 +102,21 @@
                 <div class="col-lg-4 col-md-4 mb-4">
                     <h4>Enlances de intéres</h4>
                     <ul class="footerlist">
-                        <li class="nolink"> <a href="FAQ.html">FAQ</a> </li>
-                        <li class="nolink"> <a href="politicadetratamientodedatos.html">Política de tratamiento de datos></a></li>
-                        <li class="nolink"> <a href="politicasdeenvio.html">Políticas de envío</a></li>
-                        <li class="nolink"> <a href="terminosycondiciones.html">Términos y condiciones</a></li>
-                        <li class="nolink"> <a href="garantiadefabrica.html">Garantía de fábrica</a></li>
+                        <li class="nolink">
+                            <a href="FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nolink">
+                            <a href="politicadetratamientodedatos.html">Política de tratamiento de datos></a>
+                        </li>
+                        <li class="nolink">
+                            <a href="politicasdeenvio.html">Políticas de envío</a>
+                        </li>
+                        <li class="nolink">
+                            <a href="terminosycondiciones.html">Términos y condiciones</a>
+                        </li>
+                        <li class="nolink">
+                            <a href="garantiadefabrica.html">Garantía de fábrica</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -109,7 +133,7 @@
                             <li>
                                 <i class="fa  fa-envelope-o"></i> servicioalclientevialm@hotmail.com
                             </li>
-                            <i class="fa fa-map-marker"></i> Calle siempre viva
+                            <i class="fa fa-map-marker"></i> Cl 42 A 63 C-172 Medellín, Colombia
                         </li>
                     </ul>
                 </div>
@@ -119,13 +143,15 @@
                     <div class="row">
 
                         <div class="col-lg-2 col-md-2 col-sm-4 mb-2">
-                            <i class="fa fa-facebook-square fa-2x"></i>
+                            <a class='color-black' target="_blank" href="https://www.facebook.com/ruth.giraldo.948?ref=br_rs">
+                                <i class="fa fa-facebook-square fa-2x"></i>
+                            </a>
                         </div>
+
                         <div class="col-lg-2 col-md-2 col-sm-4 mb-2">
-                            <i class="fa fa-instagram fa-2x"></i>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 mb-2">
-                            <i class="fa fa-youtube-square fa-2x"></i>
+                            <a class='color-black' target="_blank" href="https://www.instagram.com/vialmotors/">
+                                <i class="fa fa-instagram fa-2x"></i>
+                            </a>
                         </div>
 
                     </div>
@@ -142,7 +168,6 @@
     <script src="../vendor/popper/popper.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../js/home.js"></script>
-
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
         (function () {

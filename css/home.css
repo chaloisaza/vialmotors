@@ -13,6 +13,18 @@ body {
 .containerTextDivSubPage{
     margin: 0 auto !important;
 }
+.shopping-cart{
+    position: absolute;
+    right: 45px;
+}
+.color-black{
+    color: black !important
+}
+
+.color-black:hover{
+    color: #e7b830 !important
+}
+
 
 button {
     outline: none !important;
